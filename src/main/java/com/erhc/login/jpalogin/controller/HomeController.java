@@ -17,8 +17,9 @@ public class HomeController {
     }
 
     @GetMapping("/admin")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public String admin(){
+        System.out.println("Admin endpoint accessed");
 
         return "Admin";
     }

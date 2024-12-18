@@ -12,7 +12,7 @@ public class JpaLoginApplication {
 
         System.out.println("Testing console output...");
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-        String rawPassword = "123";
+        String rawPassword = "admin123";
         String encodedPassword = encoder.encode(rawPassword);
         System.out.println("Encoded password: " + encodedPassword);
 

@@ -10,11 +10,11 @@ import java.util.Collection;
 import java.util.Collections;
 
 
-@AllArgsConstructor
-@NoArgsConstructor
+
+
 public class SecurityUser implements UserDetails {
 
-    private User user;
+    private final User user;
 
     public SecurityUser(User user) {
         this.user = user;
